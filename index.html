@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Sherpa : Sherpa is a library and a command-line tool create for easy deployment of customizations and sandboxed solutions On-premises and to SharePoint Online (Office 365)">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Sherpa</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/sharepoint-sherpa/sherpa">View on GitHub</a>
+
+          <h1 id="project_title">Sherpa</h1>
+          <h2 id="project_tagline">Sherpa is a library and a command-line tool create for easy deployment of customizations and sandboxed solutions On-premises and to SharePoint Online (Office 365)</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/sharepoint-sherpa/sherpa/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/sharepoint-sherpa/sherpa/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="sherpa-" class="anchor" href="#sherpa-"><span class="octicon octicon-link"></span></a>Sherpa </h1>
+
+<h1>
+<a name="what-is-sherpa" class="anchor" href="#what-is-sherpa"><span class="octicon octicon-link"></span></a>What is Sherpa</h1>
+
+<ul>
+<li>Sherpa is a library and a command-line tool create for easy deployment of customizations and sandboxed solutions On-premises and to SharePoint Online (Office 365)</li>
+<li>Sherpa allows you to 
+
+<ul>
+<li>Deploy taxonomy (groups, term sets and terms) with known IDs </li>
+<li>Upload, activate and upgrade sandboxed solutions</li>
+<li>Configure fields and content types on a site collection level</li>
+<li>Activate site and web scoped features</li>
+<li>Disable and re-activate selected features after a solution upgrade</li>
+</ul>
+</li>
+</ul><h1>
+<a name="why-use-sherpa" class="anchor" href="#why-use-sherpa"><span class="octicon octicon-link"></span></a>Why use Sherpa</h1>
+
+<p>The deployment story with especially SharePoint Online leaves a lot to be desired. If you're creating anything but apps, the deploy process is manual or requires you to write your own deploy scrips and code from scratch. Sherpa allows you to deploy your artifacts in a repeatable manner from day one, without having to spend time writing code. </p>
+
+<h1>
+<a name="how-does-sherpa-work" class="anchor" href="#how-does-sherpa-work"><span class="octicon octicon-link"></span></a>How does Sherpa work?</h1>
+
+<ul>
+<li>The Sherpa library communicates with SharePoint exclusively through the Client Side Object Model (CSOM) 
+
+<ul>
+<li>Sherpa can thus configure both SharePoint on-premises and SharePoint Online</li>
+</ul>
+</li>
+<li>The bundled console application uses the Sherpa library allows us to quickly get started</li>
+</ul><h1>
+<a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting started</h1>
+
+<ol>
+<li>Clone the project from github</li>
+<li>Add your fields, content types, taxonomy and site hierarchy etc through configuration, look at the sample config for guidance</li>
+<li>Build the solution and navigate to the out folder, typically Sherpa.Installer\bin\debug)</li>
+<li>Put any Sandboxed solutions you might have in the folder 'solutions' </li>
+<li>Start Sherpa.exe and pass the parameters 'url' and 'username' to hint where and as whom the application should connect. Add the flag --spo if and only if you are connecting to SharePoint Online. You can type 'Sherpa.exe --help' for help</li>
+<li>Sherpa will authenticate the user after you provide the password. After this you can choose which action you want to perform </li>
+</ol><h1>
+<a name="known-limitations" class="anchor" href="#known-limitations"><span class="octicon octicon-link"></span></a>Known limitations</h1>
+
+<ul>
+<li>On-premises: the application must run at one of your servers in your SharePoint farm</li>
+<li>On-premises: the application runs exclusively in the context of the current user</li>
+</ul><h1>
+<a name="maintainers" class="anchor" href="#maintainers"><span class="octicon octicon-link"></span></a>Maintainers</h1>
+
+<p>Tarjei Ormestøyl [<a href="mailto:tarjeieo@puzzlepart.com"></a><a href="mailto:tarjeieo@puzzlepart.com">tarjeieo@puzzlepart.com</a>]
+Ole Kristian Mørch-Storstein [<a href="mailto:olekms@puzzlepart.com"></a><a href="mailto:olekms@puzzlepart.com">olekms@puzzlepart.com</a>]</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Sherpa maintained by <a href="https://github.com/sharepoint-sherpa">sharepoint-sherpa</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
